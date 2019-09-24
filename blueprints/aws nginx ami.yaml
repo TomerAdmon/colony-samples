@@ -1,0 +1,14 @@
+---
+spec_version: 1
+kind: blueprint
+
+metadata:
+  description: NGINX deployed from a predefined ami
+
+
+clouds:
+  - AWS: eu-west-1
+
+applications:
+  - nginx:
+      instances: 1

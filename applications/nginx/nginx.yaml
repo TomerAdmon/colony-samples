@@ -1,0 +1,25 @@
+spec_version: 1
+kind: application
+
+source:
+  os_type: linux
+  image:
+    ami:
+      - id: ami-0333096346fd36ce7
+        region: eu-west-1
+        username: root
+
+infrastructure:
+  compute:
+    spec:
+      aws:
+        instance_type: t2.micro
+
+configuration:
+  healthcheck:
+    script: healthcheck.sh
+    timeout: 180
+
+debugging:
+  connection_protocol: SSH
+
