@@ -14,11 +14,10 @@ infrastructure:
     spec:
       aws:
         instance_type: t2.micro
-
-configuration:
-  healthcheck:
-    script: healthcheck.sh
-    timeout: 180
+  connectivity:
+    external:
+      - public_http:
+          port: 80
 
 debugging:
   connection_protocol: SSH
