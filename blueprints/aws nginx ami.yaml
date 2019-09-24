@@ -11,4 +11,4 @@ clouds:
 
 applications:
   - nginx:
-      instances: 1
+      instances: 2
