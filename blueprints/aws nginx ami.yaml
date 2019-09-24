@@ -12,8 +12,3 @@ clouds:
 applications:
   - nginx:
       instances: 1
-
-configuration:
-  healthcheck:
-    wait_for_ports: ALL
-    timeout: 180
